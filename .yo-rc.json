@@ -4,7 +4,7 @@
     "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.13.1",
-    "libraryName": "graph-api-tutorial-spfx",
+    "libraryName": "sharepoint-graphAPI",
     "libraryId": "d17ab73f-9d6f-4159-87c1-476b89928561",
     "packageManager": "npm",
     "isDomainIsolated": false,

@@ -1,6 +1,6 @@
 import { IUserItem } from "./IUserItem";
 
-export interface IGraphConsumerState {
+export interface IGraphState {
   users: Array<IUserItem>;
   searchFor: string;
 }

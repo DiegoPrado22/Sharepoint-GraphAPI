@@ -7,19 +7,19 @@ import {
 } from "@microsoft/sp-property-pane";
 import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
 
-import * as strings from "GraphConsumerWebPartStrings";
-import GraphConsumer from "./components/GraphConsumer";
-import { IGraphConsumerProps } from "./components/IGraphConsumerProps";
+import * as strings from "GraphWebPartStrings";
+import GraphTest from "./components/Graph";
+import { IGraphProps } from "./components/IGraphProps";
 import { ClientMode } from "./components/ClientMode";
 
-export interface IGraphConsumerWebPartProps {
+export interface IGraphWebPartProps {
   clientMode: ClientMode;
 }
 
-export default class GraphConsumerWebPart extends BaseClientSideWebPart<IGraphConsumerWebPartProps> {
+export default class GraphWebPart extends BaseClientSideWebPart<IGraphWebPartProps> {
   public render(): void {
-    const element: React.ReactElement<IGraphConsumerProps> =
-      React.createElement(GraphConsumer, {
+    const element: React.ReactElement<IGraphProps> =
+      React.createElement(GraphTest, {
         clientMode: this.properties.clientMode,
         context: this.context,
       });

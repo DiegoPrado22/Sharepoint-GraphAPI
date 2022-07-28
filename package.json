@@ -1,5 +1,5 @@
 {
-  "name": "graph-api-tutorial-spfx",
+  "name": "sharepoint-graphAPI",
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",

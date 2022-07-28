@@ -1,4 +1,4 @@
-import * as strings from "GraphConsumerWebPartStrings";
+import * as strings from "GraphWebPartStrings";
 import {
   BaseButton,
   Button,
@@ -15,9 +15,9 @@ import { AadHttpClient, MSGraphClient } from "@microsoft/sp-http";
 import { escape } from "@microsoft/sp-lodash-subset";
 
 import { ClientMode } from "./ClientMode";
-import styles from "./GraphConsumer.module.scss";
-import { IGraphConsumerProps } from "./IGraphConsumerProps";
-import { IGraphConsumerState } from "./IGraphConsumerState";
+import styles from "./GraphTest.module.scss";
+import { IGraphProps } from "./IGraphProps";
+import { IGraphState } from "./IGraphState";
 import { IUserItem } from "./IUserItem";
 
 // Configure the columns for the DetailsList component
@@ -49,10 +49,10 @@ let _usersListColumns = [
 ];
 
 export default class GraphConsumer extends React.Component<
-  IGraphConsumerProps,
-  IGraphConsumerState
+  IGraphProps,
+  IGraphState
 > {
-  constructor(props: IGraphConsumerProps, state: IGraphConsumerState) {
+  constructor(props: IGraphProps, state: IGraphState) {
     super(props);
 
     // Initialize the state of the component
@@ -62,7 +62,7 @@ export default class GraphConsumer extends React.Component<
     };
   }
 
-  public render(): React.ReactElement<IGraphConsumerProps> {
+  public render(): React.ReactElement<IGraphProps> {
     return (
       <div className={styles.graphConsumer}>
         <div className={styles.container}>
@@ -146,7 +146,6 @@ export default class GraphConsumer extends React.Component<
   };
 
   private _searchWithAad = (): void => {
-    // Log the current operation
     console.log("Using _searchWithAad() method");
 
     // Using Graph here, but any 1st or 3rd party REST API that requires Azure AD auth can be used here.
