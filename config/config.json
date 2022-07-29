@@ -5,14 +5,14 @@
     "graph-consumer-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/graphConsumer/GraphConsumerWebPart.js",
-          "manifest": "./src/webparts/graphConsumer/GraphConsumerWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/graphConsumer/GraphWebPart.js",
+          "manifest": "./src/webparts/graphConsumer/GraphWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "GraphConsumerWebPartStrings": "lib/webparts/graphConsumer/loc/{locale}.js"
+    "GraphWebPartStrings": "lib/webparts/graph/loc/{locale}.js"
   }
 }
