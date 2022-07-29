@@ -13,4 +13,4 @@ tslint.json
 *.log
 
 .yo-rc.json
-.vscode
+.vscod
